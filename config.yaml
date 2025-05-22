@@ -1,0 +1,26 @@
+#email to which errors will be sent
+email: "mblanco@lncrna.caltech.edu"
+#Location of the config file for barcodeIdentification
+bID: "config.txt"
+#Location of the samples json file produced with the fastq2json.py script 
+samples: "./samples.json"
+#Output directory  
+output_dir: ""
+#Temporary directory
+temp_dir: "/central/scratch/"
+#Currently "mm10" and "hg38" available
+assembly: "hg38"
+#Number of barcodes used
+num_tags: "8"
+#Number of chunks to split fastq
+num_chunks: 25 
+#File for cutadapt
+cutadapt_oligos: "oligo2_reverse.fasta"
+#Bowtie2 Indexes
+bowtie2_index:
+    hg38: "/groups/guttman/jguo/genomes/ncRNA_bt2/ncRNA"
+    mm10: "/groups/guttman/jguo/genomes/mm10_ncRNA_bt2/mm10_ncRNA"
+#Star Indexes
+star_index:
+    mm10: "/groups/guttman/genomes/mus_musculus/GRCm38/star"
+    hg38: "/groups/guttman/genomes/homo_sapiens/hg38"

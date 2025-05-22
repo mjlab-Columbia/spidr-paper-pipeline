@@ -1,0 +1,8 @@
+name: umitools
+channels:
+  - conda-forge
+  - bioconda
+  - anaconda
+dependencies:
+  - python=3.6
+  - umi_tools
